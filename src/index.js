@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 import App from './App';
-import { New } from './components/New/New';
+// import { New } from './components/New/New';
 import { User } from './pages/User/User';
 
 // на главной странице располагаются кнопки регистрация и авторизация
@@ -19,13 +19,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    children: [
-      {
-        path: "new",
-        element: <New />,
-      },
-    ],
-  },
+    },
   {
     path: '/users/:userId/petr/:id',
     element: <User />
